@@ -1,0 +1,84 @@
+.team {
+  padding-bottom: 110px;
+
+  &_descr {
+    width: 40%;
+    margin: 40px 0 0 0;
+    color: $complimentary-color;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &_photo_big {
+    float: left;
+    width: 321px;
+    height: 458px;
+    margin: 70px 70px 0 0;
+    background: url('img/team_1.jpg') center / auto 100% no-repeat;
+  }
+
+  &_member_header {
+    display: inline-block;
+    margin: 85px 0 35px 0;
+    color: $complimentary-color;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &_member_descr {
+    width: 85%;
+    color: $complimentary-color;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &_member_social {
+    margin-top: 40px;
+
+    p {
+      display: inline-block;
+      margin: 0 30px 0 0;
+      color: $complimentary-color;
+      font-size: 18px;
+      font-style: italic;
+      line-height: 18px;
+    }
+  }
+
+  &_photos {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 58%;
+    margin: 67px 0 0 0;
+  }
+}
+
+.member_photo_1 {
+  width: 23%;
+  height: 214px;
+  background: url('img/team_2.jpg') center / auto 100% no-repeat;
+}
+
+.member_photo_2 {
+  width: 23%;
+  height: 214px;
+  background: url('img/team_3.jpg') center / auto 100% no-repeat;
+}
+
+.member_photo_3 {
+  width: 23%;
+  height: 214px;
+  background: url('img/team_4.jpg') center / auto 100% no-repeat;
+}
+
+.member_photo_4 {
+  width: 23%;
+  height: 214px;
+  background: url('img/team_5.jpg') center / auto 100% no-repeat;
+}

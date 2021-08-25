@@ -1,0 +1,29 @@
+@import 'libs/normalize';
+
+@import 'base/variables';
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/elements';
+@import 'blocks/services';
+@import 'blocks/products';
+@import 'blocks/team';
+@import 'blocks/subscribe';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+@import 'base/media';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 74%;
+  margin-right: 13%;
+  margin-left: 13%;
+}

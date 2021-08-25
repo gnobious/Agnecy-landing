@@ -1,0 +1,45 @@
+.footer {
+  box-sizing: border-box;
+  height: 111px;
+  padding: 45px 0 37px 0;
+  background-color: $complimentary-color;
+
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+  }
+
+  &_copyright {
+    margin: auto 0;
+    color: $text-white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+
+    a {
+      color: $text-white;
+      text-decoration: none;
+      transition: 0.3s all;
+    }
+
+    a:hover {
+      color: $primary-color;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.3s all;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+  }
+
+  &_social {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 185px;
+    text-align: right;
+  }
+}

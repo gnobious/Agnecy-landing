@@ -1,0 +1,20 @@
+.main_btn {
+  width: 227px;
+  height: 55px;
+  margin-top: 58px;
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: $white;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+
+  &:hover {
+    color: $white;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+}
