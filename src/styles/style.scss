@@ -20,10 +20,24 @@
 
 body {
   margin: 0;
+  background-color: $bg-light;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+main {
+  background-color: $white;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
-  width: 74%;
-  margin-right: 13%;
-  margin-left: 13%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }

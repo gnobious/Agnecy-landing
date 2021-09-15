@@ -4,7 +4,7 @@
   margin: 0 13%;
   padding: 105px 0 110px 0;
 
-  &_descr {
+  &__descr {
     margin-top: 50px;
     margin-bottom: 24px;
     color: $complimentary-color;
@@ -14,7 +14,7 @@
     text-align: left;
   }
 
-  &_form {
+  &__form {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,7 +31,8 @@
       font-size: 16px;
       background-color: rgba(0, 0, 0, 0.1);
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
+      outline: none;
     }
 
     textarea {
@@ -45,7 +46,8 @@
       font-size: 16px;
       background-color: rgba(0, 0, 0, 0.1);
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
+      outline: none;
       resize: none;
     }
 
@@ -60,9 +62,9 @@
     }
   }
 
-  &_block {
+  &__block {
     position: absolute;
-    right: -95.9%;
+    right: -95.7%;
     bottom: 110px;
     box-sizing: border-box;
     width: 577px;
@@ -71,7 +73,7 @@
     background-color: $complimentary-color;
   }
 
-  &_header {
+  &__header {
     margin-bottom: 10px;
     color: $text-white;
     font-weight: 700;
@@ -80,11 +82,23 @@
     text-transform: uppercase;
   }
 
-  &_info {
+  &__info {
     margin-top: 30px;
     color: $text-white;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  input,
+  textarea {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      background-color: $white;
+      box-shadow: 0 3px 7px 3px rgb(0, 0, 0, 0.15);
+    }
   }
 }

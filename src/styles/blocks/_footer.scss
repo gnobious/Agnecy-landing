@@ -4,13 +4,13 @@
   padding: 45px 0 37px 0;
   background-color: $complimentary-color;
 
-  &_row {
+  &__row {
     display: flex;
     justify-content: space-between;
     vertical-align: bottom;
   }
 
-  &_copyright {
+  &__copyright {
     margin: auto 0;
     color: $text-white;
     font-weight: 300;
@@ -36,10 +36,22 @@
     }
   }
 
-  &_social {
+  &__social {
     display: inline-flex;
     justify-content: space-between;
     width: 185px;
     text-align: right;
+  }
+
+  &__social__link {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    transition: 0.4s all;
+
+    &:hover {
+      background-color: $primary-color;
+      box-shadow: 0 0 4px 2px $primary-color;
+    }
   }
 }

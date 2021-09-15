@@ -1,36 +1,45 @@
 .team {
   padding-bottom: 110px;
 
-  &_descr {
-    width: 40%;
-    margin: 40px 0 0 0;
-    color: $complimentary-color;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
+  & .mini_divider {
+    margin-left: 10px;
   }
 
-  &_photo_big {
+  &__block {
+    margin: 70px 10px 0 10px;
+  }
+
+  &__photo__big {
     float: left;
-    width: 321px;
+    width: 25.8%;
     height: 458px;
-    margin: 70px 70px 0 0;
-    background: url('img/team_1.jpg') center / auto 100% no-repeat;
+    margin: 0 70px 0 0;
+
+    &__img {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
   }
 
-  &_member_header {
-    display: inline-block;
-    margin: 85px 0 35px 0;
-    color: $complimentary-color;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 24px;
-    text-transform: uppercase;
+  li {
+    list-style: none;
   }
 
-  &_member_descr {
-    width: 85%;
+  a {
+    text-decoration: none;
+    transition: 0.3s all;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__descr {
+    width: 40%;
+    margin: 40px 10px 0 10px;
     color: $complimentary-color;
     font-weight: 300;
     font-size: 16px;
@@ -38,47 +47,117 @@
     text-align: left;
   }
 
-  &_member_social {
-    margin-top: 40px;
+  &__content {
+    box-sizing: border-box;
+    height: 458px;
+    padding: 15px 0 0 0;
+  }
 
-    p {
+  &__list {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  &__member {
+    display: none;
+
+    &__header {
+      display: inline-block;
+      margin: 0 0 2.8% 0;
+      color: $complimentary-color;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+
+    &__descr {
+      width: 85%;
+      color: $complimentary-color;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__member__social {
+    margin-top: 3.5%;
+
+    li {
       display: inline-block;
       margin: 0 30px 0 0;
       color: $complimentary-color;
       font-size: 18px;
       font-style: italic;
-      line-height: 18px;
+      line-height: 15px;
     }
   }
 
-  &_photos {
+  &__photos {
     display: inline-flex;
     justify-content: space-between;
-    width: 58%;
-    margin: 67px 0 0 0;
+    width: 68%;
+    height: 48.5%;
+    margin: 4.1% 0 0 0;
+    padding: 0 0 0 0;
   }
-}
 
-.member_photo_1 {
-  width: 23%;
-  height: 214px;
-  background: url('img/team_2.jpg') center / auto 100% no-repeat;
-}
+  &__photos__label {
+    position: absolute;
+    bottom: -37px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 37px;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+    color: $bg-light;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 5px 5px 0 0;
+    transition: all 0.5s ease;
 
-.member_photo_2 {
-  width: 23%;
-  height: 214px;
-  background: url('img/team_3.jpg') center / auto 100% no-repeat;
-}
+    &.active {
+      bottom: 0;
+    }
+  }
 
-.member_photo_3 {
-  width: 23%;
-  height: 214px;
-  background: url('img/team_4.jpg') center / auto 100% no-repeat;
-}
+  &__photos__item {
+    position: relative;
+    width: 23%;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
 
-.member_photo_4 {
-  width: 23%;
-  height: 214px;
-  background: url('img/team_5.jpg') center / auto 100% no-repeat;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 10px -2px $primary-color;
+    }
+
+    &:hover .team__photos__img,
+    &:focus .team__photos__img {
+      filter: opacity(1);
+      transition: all 0.5s ease;
+    }
+
+    &:focus .team__photos__label,
+    &:hover .team__photos__label {
+      bottom: 0;
+    }
+
+    & img {
+      width: 100%;
+      height: 214px;
+      object-fit: cover;
+      filter: opacity(0.8);
+      transition: all 0.5s ease;
+    }
+  }
 }

@@ -23,12 +23,49 @@
   background-color: $primary-color;
 }
 
-.social_icon {
-  transition: 0.4s all;
+.mail_form {
+  width: 521px;
+  height: 79px;
+  margin-right: 22px;
+  padding: 0 0 0 36px;
+  color: #2c2c2c;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: $white;
+  border: none;
+  border-radius: 5px;
 
-  &:hover {
-    width: 105%;
-    height: auto;
-    transition: 0.4s all;
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 4px 3px $primary-color;
+  }
+}
+
+.pageup {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  border-radius: 100%;
+
+  span {
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: $white;
+    border-radius: 2px;
+
+    &:nth-child(1) {
+      transform: translateX(4px) translateY(16px) rotate(-45deg);
+    }
+
+    &:nth-child(2) {
+      transform: translateX(16px) translateY(12px) rotate(45deg);
+    }
   }
 }

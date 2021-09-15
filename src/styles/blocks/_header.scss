@@ -1,14 +1,28 @@
 header {
-  height: 660px;
-  background-color: $bg-light;
+  height: 540px;
 }
 
-.main_nav {
-  position: fixed;
+.nav {
+  position: sticky;
+  top: 0;
   z-index: 2;
-  width: 100%;
+  max-width: 80%;
   height: 90px;
+  margin: 30px auto 0;
+  transition: all 0.3s ease;
+}
+
+.main__nav {
+  color: $text-white;
   background-color: $complimentary-color;
+
+  &_scroll {
+    max-width: 100%;
+    color: $complimentary-color;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px 0 #00000025;
+  }
 }
 
 .menu {
@@ -18,9 +32,8 @@ header {
   padding: 0 20%;
   list-style-type: none;
 
-  &_item {
+  &__item {
     display: inline-block;
-    width: 90px;
     line-height: 90px;
     text-align: center;
 
@@ -30,30 +43,31 @@ header {
     }
   }
 
-  &_link {
-    color: $bg-light;
+  &__link {
+    padding: 35px 24px;
     font-weight: 400;
     font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     text-decoration: none;
   }
 }
 
 .subheader {
-  padding: 200px 0 110px 0;
+  padding: 80px 0 110px 0;
 
-  &_slogan {
+  &__slogan {
     display: block;
-    height: 120px;
+    width: 45%;
     color: $black;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 1.5px;
     text-align: left;
     text-transform: uppercase;
   }
 
-  &_descr {
+  &__descr {
     display: block;
     width: 40%;
     height: 73px;
@@ -65,7 +79,16 @@ header {
     text-align: left;
   }
 
-  &_img {
+  &__video {
+    float: right;
+    width: 50%;
+    height: 356px;
+    max-height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 25px $complimentary-color;
+  }
+
+  &__img {
     position: relative;
     justify-content: end;
     float: right;
