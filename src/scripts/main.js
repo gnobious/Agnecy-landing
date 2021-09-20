@@ -1,14 +1,29 @@
 $(document).ready(function() {  
 
-    const $nav = $('.nav');
+    const $nav = $('.nav'),
+    $menu = $('.main__nav'),
+    $menuItem = $('.menu__item'),
+    $hamburger = $('.hamburger');
+
+    //  Mobile menu behavior
+
+    $hamburger.click(function() {
+        $hamburger.toggleClass('hamburger_active');
+        $menu.fadeToggle();  // toggleClass('active')
+    });
+
+    $menuItem.click(function() {
+        $hamburger.toggleClass('hamburger_active');
+        $menu.fadeToggle();  //toggleClass('active')
+    });
 
     // Menu behavior on Scroll
     $(window).scroll(function() {     
 
         if ($(this).scrollTop() > 30 && $nav.hasClass('main__nav')) {
-            $nav.removeClass('main__nav').addClass('main__nav_scroll');            
+            $nav.addClass('main__nav_scroll');            
         } else if ($(this).scrollTop() <= 30 && $nav.hasClass('main__nav_scroll')){
-            $nav.removeClass('main__nav_scroll').addClass('main__nav');            
+            $nav.removeClass('main__nav_scroll');            
         }
 
     });
