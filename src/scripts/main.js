@@ -75,7 +75,7 @@ $(document).ready(function() {
     });
 
     // Team Section        
-    $('.team__photos__label.active').parent().focus();
+    //$('.team__photos__label.active').parent().focus();
 
     $('.team__photos__item').click(function() {
         const curItemId = this.id;
