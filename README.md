@@ -28,7 +28,7 @@ In  this  project i practice:
 
 <h2 id="demo">Demo 🎥</h2>
 
-The completed project can be viewed [here](https://gnobious.github.io/Agnecy-landing/ "demo url")
+The completed project can be viewed [here](https://rimerian.github.io/Agnecy-landing/ "demo url")
 
 <h2 id="how-to-use">How to Use 🔧</h2>
 The setup required can be broken into two types:
@@ -51,7 +51,7 @@ From your command line, first clone RunSmart:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/gnobious/Agnecy-landing.git
+$ git clone https://github.com/rimerian/Agnecy-landing.git
 
 # Go into the repository
 $ cd Agnecy-landing
@@ -278,6 +278,6 @@ In this project, it was decided NOT to use ***bootstrap grid***. All adaptations
 <h2 id="layout">Layout ✒️</h2>
 
 The site layout is shown below.
-The layout in another formats is also available in the [repository](https://github.com/gnobious/Agnecy-landing/tree/master/src/references/layouts/ "layouts source").
+The layout in another formats is also available in the [repository](https://github.com/rimerian/Agnecy-landing/tree/master/src/references/layouts/ "layouts source").
 
 ![Full-size site layout](src/references/layouts/Agnecy.jpg)
